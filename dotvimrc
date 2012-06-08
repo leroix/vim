@@ -1,0 +1,11 @@
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+:set nowrap
+
+:nnoremap <Tab> :buffers<CR>:buffer<Space>
+:inoremap <c-\> <c-x><c-n><down>
