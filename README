@@ -1,1 +1,1 @@
-type "build" into terminal
+type "bash build_config" into terminal
