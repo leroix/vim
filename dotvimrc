@@ -1,5 +1,5 @@
 call pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
 
 :set tabstop=4
@@ -9,3 +9,12 @@ filetype plugin indent on
 
 :nnoremap <Tab> :buffers<CR>:buffer<Space>
 :inoremap <c-\> <c-x><c-n><down>
+
+set background=dark
+colorscheme solarized
+
+" Remove menu bar
+set guioptions-=m
+
+" Remove toolbar
+set guioptions-=T
