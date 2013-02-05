@@ -10,8 +10,6 @@ filetype plugin indent on
 :nnoremap <Tab> :buffers<CR>:buffer<Space>
 :inoremap <c-\> <c-x><c-n><down>
 
-set background=dark
-colorscheme solarized
 
 " Remove menu bar
 set guioptions-=m
@@ -32,3 +30,10 @@ set mouse=a
 " iTerm insert mode cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+:autocmd InsertEnter,InsertLeave * set cul!
+
+" Remove occasional delay quickly exiting insert mode. This disables
+" function and arrow keys in insert mode
+"set noesckeys
+set ttimeoutlen=100
+
