@@ -16,3 +16,6 @@
 [submodule "bundle/vim-fakeclip"]
 	path = bundle/vim-fakeclip
 	url = git://github.com/kana/vim-fakeclip.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
