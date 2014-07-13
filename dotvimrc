@@ -1,12 +1,16 @@
 call pathogen#infect()
 syntax enable
-filetype plugin indent on
 
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
 :set nowrap
 :set ruler
+
+autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
+
+filetype plugin indent on
 
 :nnoremap <Tab> :buffers<CR>:buffer<Space>
 :inoremap <c-\> <c-x><c-n><down>
@@ -40,3 +44,13 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 "set noesckeys
 set ttimeoutlen=100
 
+" Netrw tree view
+let g:netrw_liststyle=3
+let g:netrw_browse_split=4
+let g:netrw_preview=1
+let g:netrw_winsize=30
+command! Files Vex | silent vertical resize 30 | set winfixwidth
+
+" Get swp files out of working directory
+set directory=/Users/leroix/.vim/tmp
+set backupdir=/Users/leroix/.vim/tmp
