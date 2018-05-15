@@ -7,6 +7,9 @@ syntax enable
 :set nowrap
 :set ruler
 
+" Syntax highlighting long lines is bad
+:set synmaxcol=256
+
 autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
 
